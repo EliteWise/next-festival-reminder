@@ -1,0 +1,9 @@
+/home/elite/projects/NextFestivalReminder/bin/Release/net6.0/NextFestivalReminder.deps.json
+/home/elite/projects/NextFestivalReminder/bin/Release/net6.0/NextFestivalReminder.dll
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.csproj.AssemblyReference.cache
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.GeneratedMSBuildEditorConfig.editorconfig
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.AssemblyInfoInputs.cache
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.AssemblyInfo.cs
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.csproj.CoreCompileInputs.cache
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.sourcelink.json
+/home/elite/projects/NextFestivalReminder/obj/Release/net6.0/NextFestivalReminder.dll
