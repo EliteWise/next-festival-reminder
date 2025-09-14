@@ -1,8 +1,8 @@
 {
   "Name": "Next Festival Reminder",
   "Author": "EliteWise",
-  "Version": "1.0.0",
-  "Description": "Displays the next festival in a permanent HUD square.",
+  "Version": "1.0.1",
+  "Description": "Displays the next festival date in a permanent HUD icon",
   "UniqueID": "EliteWise.NextFestivalReminder",
   "EntryDll": "NextFestivalReminder.dll",
   "MinimumApiVersion": "4.0.0",
