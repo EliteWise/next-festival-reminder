@@ -17,8 +17,8 @@ namespace NextFestivalReminder
             helper.Events.Display.RenderedHud += this.OnRenderedHud;
         }
 
-        private FestivalInfo nextFestival;
-        private string lastSeason;
+        private FestivalInfo? nextFestival;
+        private string? lastSeason;
         private int lastDay;
 
         private FestivalInfo GetNextFestival()
@@ -51,38 +51,23 @@ namespace NextFestivalReminder
 
             }
 
-            return nextFestival;
+            return nextFestival ?? new FestivalInfo("X", 0, "X");
 
         }
 
-        private void OnRenderedHud(object sender, RenderedHudEventArgs e)
+        private void OnRenderedHud(object? sender, RenderedHudEventArgs e)
         {
             FestivalInfo festival = GetNextFestival();
-            string text = festival.ToString();
+            
             if (festival != null)
             {
                 var spriteBatch = e.SpriteBatch;
 
-                Vector2 textSize = Game1.smallFont.MeasureString(text);
-                int paddingX = 8;
-                int paddingY = 4;
-                int width = (int)textSize.X + 2 * paddingX;
-                int height = (int)textSize.Y + 2 * paddingY;
-
-                float screenWidth = Game1.uiViewport.Width;
-                float screenHeight = Game1.uiViewport.Height;
-
-                float goldX = screenWidth - 128;
-                float goldY = screenHeight * 0.02f;
-
-                float offsetX = width * 0.1f;
-                float offsetY = height * 3.5f;
-                float x = goldX - width + offsetX + screenWidth * 0.08f;
-                float y = goldY + offsetY;
+                float x = Game1.viewport.Width - 140;
+                float y = 266;
 
                 Color hudOrange = new Color(0xDC, 0x7B, 0x05);
 
-                Texture2D whitePixel = Game1.fadeToBlackRect;
                 Texture2D wizardFurniture = Game1.content.Load<Texture2D>("TileSheets/wizard_furniture");
 
                 int iconSize = 32;
@@ -90,7 +75,8 @@ namespace NextFestivalReminder
                 spriteBatch.Draw(wizardFurniture, new Rectangle((int)x, (int)y, iconSize, iconSize), sourceRect, hudOrange);
 
                 Rectangle iconRect = new Rectangle((int)x, (int)y, iconSize, iconSize);
-                if (iconRect.Contains(Game1.getMouseX(), Game1.getMouseY())) {
+                if (iconRect.Contains(Game1.getMouseX(), Game1.getMouseY()))
+                {
                     IClickableMenu.drawHoverText(spriteBatch, festival.ToString(), Game1.smallFont);
                 }
             }

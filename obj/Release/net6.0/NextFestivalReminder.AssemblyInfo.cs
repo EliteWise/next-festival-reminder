@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextFestivalReminder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11bdd5d5e5e482429a38f6b0254ff19c88e6d27f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e85e2c15937d58caef4e88d70dc6bd4f4f69d03e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextFestivalReminder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextFestivalReminder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
